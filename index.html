@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Birthday Go-Kart Invite</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Birthday Go-Kart Invite</h1>
+
+    <p>
+      You're invited to a birthday session at <strong>ArboRing Go-Kart Track</strong>.
+      Select the time that works best for you — the final slot will be chosen based on responses.
+    </p>
+
+    <div class="meta">
+      <span>📍 Location: ArboRing Gokart</span>
+      <span>🏁 Activity: Go-Kart Racing</span>
+      <span>🕒 Saturday · 12:00 - 16:00</span>
+    </div>
+
+    <p><strong>Contact:</strong> +36 30 439 0195</p>
+  </div>
+
+  <!-- RSVP -->
+  <div class="card">
+    <h2>RSVP</h2>
+
+    <form id="form">
+
+      <input type="text" name="name" placeholder="Your name" required />
+
+      <select name="attendance" required>
+        <option value="">Attendance</option>
+        <option>Definitely</option>
+        <option>Likely</option>
+        <option>Maybe</option>
+        <option>Unlikely</option>
+      </select>
+
+      <div class="time-grid">
+        <label class="time-option"><input type="radio" name="time" value="12:00 - 13:00" required>12:00 - 13:00</label>
+        <label class="time-option"><input type="radio" name="time" value="13:00 - 14:00">13:00 - 14:00</label>
+        <label class="time-option"><input type="radio" name="time" value="14:00 - 15:00">14:00 - 15:00</label>
+        <label class="time-option"><input type="radio" name="time" value="15:00 - 16:00">15:00 - 16:00</label>
+      </div>
+
+      <button type="submit">Submit Response</button>
+    </form>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <!-- TRACKER -->
+  <!-- <div class="card">
+    <h2>Tracker</h2>
+
+    <div class="stats">
+      <div class="stat">
+        <strong id="responses">0</strong>
+        <p>People Responded</p>
+      </div>
+
+      <div class="stat">
+        <strong id="best">-</strong>
+        <p>Most Preferred Time</p>
+      </div>
+    </div>
+  </div> -->
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
